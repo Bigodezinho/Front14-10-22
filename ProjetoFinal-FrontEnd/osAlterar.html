@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<nav>
+            
+    <div class="logo">
+        <a href="index.html"> Empreiteira </a>
+        
+    </div>
+    
+    <ul class="menuP">
+        <li> <a href="cliente.html"> Cliente </a> </li>
+        <li> <a href="Funcionario.html"> Funcionário </a> </li>
+        <li> <a href="obra.html"> Obra </a> </li>
+        <li> <a href="os.html"> Os </a> </li>
+    </ul>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+    </ul>
+
+    <ul>
+        <li> <a href="index.html"> Entrar </a> </li>
+        <li> <a href="cadastro.html"> Funcionalidades </a> </li>
+        <li> <a href="contato.html"> Contato </a> </li>
+    </ul>
+
+    
+
+</nav>
+
+<body>
+        <div id="alterar-os" class="ocultar">
+            <h1>Alterar OS</h1>
+            <br>
+
+            <div class="input-group row justify-content-center">
+                <label for="os-id-alterar">ID</label>
+                <input type="text" class="form-control col-4 input-group"  id="os-id-alterar" disabled>
+            </div>
+
+            <label for="valor-obra">Valor da obra:</label>
+            <input type="text" id="valor-obra-alterar" />
+            <select id="idClientes"></select>
+            <select id="idFuncionarios"></select>
+            <select id="idObras"></select>
+            <!-- <label for="idCliente">Id do cliente:</label>
+            <input type="text" id="idCliente-alterar" />
+            <label for="idFuncionario">Id do funcionário:</label>
+            <input type="text" id="idFuncionario-alterar" />
+            <label for="idObra">Id do obra:</label>
+            <input type="text" id="idObra-alterar" /> -->
+            <div class="centro">
+                <input type="button" value="Alterar OS" onclick="handlerAlterarOS()" />
+                <input type="button" value="Cancelar" onclick="toogleAlterarOS()" />
+                <input type="button" value="Deletar" onclick="handlerDeleteOS()" />
+            </div>
+        </div>
+        <br>
+        <table id="tabela-os" class="mostrar">
+            <thead>
+                <tr>
+                    <th>
+                        ordemDeServico
+                    </th>
+                    <th>
+                        valordaObra
+                    </th>
+                    <th>
+                        descricaoDaObra
+                    </th>
+                    <th>
+                        nomeCliente
+                    </th>
+                    <th>
+                        nomeFuncionario
+                    </th>
+                    <th>
+                        dataDeInicio
+                    </th>
+                    <th>
+                        previsaoDeTermino
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tabela-os-body">
+
+            </tbody>
+        </table>
+        </div>
+
+    <script src="jquery.js"></script>
+    
+    <script src="utils.js"></script>
+    <script src="request.js"></script>
+    <script src="cliente.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="obra.js"></script>
+    <script src="osAlterar.js"></script>
+    <!-- <script src="OS.js"></script> -->
+</body>
+
+</html>
